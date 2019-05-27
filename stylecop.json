@@ -1,0 +1,13 @@
+{
+    "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+    "settings": {
+        "documentationRules": {
+            "companyName": "Callie LeFave",
+            "copyrightText": "Copyright (c) {companyName} {copyrightYear}\n{licenseNotice}",
+            "variables": {
+                "copyrightYear": "2019",
+                "licenseNotice": "This Source Code Form is subject to the terms of the Mozilla Public\nLicense, v. 2.0. If a copy of the MPL was not distributed with this\nfile, You can obtain one at https://mozilla.org/MPL/2.0/."
+            }
+        }
+    }
+}

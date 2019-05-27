@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <CodeAnalysisRuleSet>../base.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>0.1.0</Version>
+    <Author>Callie LeFave</Author>
+    <Description>Cross-platform .NET library for making object editor GUIs.</Description>
+    <PackageTags>library;</PackageTags>
+    <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/AntyMew/ObjectEditor</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CodeCracker.CSharp" Version="1.1.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="ReactiveUI" Version="9.16.3" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="../stylecop.json" Link="stylecop.json" />
+  </ItemGroup>
+
+</Project>
