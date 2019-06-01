@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ObjectEditor</name>
+    </assembly>
+    <members>
+        <member name="T:ObjectEditor.IMemberModel">
+            <summary>
+            A model representing a member of a class or a struct.
+            </summary>
+        </member>
+        <member name="P:ObjectEditor.IMemberModel.Name">
+            <summary>
+            Gets the unqualified name of the represented member.
+            </summary>
+        </member>
+        <member name="P:ObjectEditor.IMemberModel.Value">
+            <summary>
+            Gets or sets the value of the represented member.
+            </summary>
+        </member>
+        <member name="T:ObjectEditor.MemberModel`1">
+            <inheritdoc cref="T:ObjectEditor.IMemberModel"/>
+            <typeparam name="T">The type of the represented member.</typeparam>
+        </member>
+        <member name="M:ObjectEditor.MemberModel`1.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ObjectEditor.MemberModel`1"/> class.
+            </summary>
+            <param name="name">The unqualified name of the represented member.</param>
+        </member>
+        <member name="P:ObjectEditor.MemberModel`1.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:ObjectEditor.MemberModel`1.Value">
+            <inheritdoc />
+        </member>
+        <member name="P:ObjectEditor.MemberModel`1.ObjectEditor#IMemberModel#Value">
+            <inheritdoc />
+        </member>
+        <member name="M:ObjectEditor.MemberModel`1.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:ObjectEditor.MemberModel`1.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:ObjectEditor.Common.Utilities.ToViewModel(System.Reflection.MemberInfo)">
+            <summary>
+            Creates a new <see cref="!:MemberViewModel"/> from the passed <see cref="T:System.Reflection.MemberInfo"/>. A derived type is
+            automatically selected via reflection based on the type represented by the <see cref="T:System.Reflection.MemberInfo"/>.
+            </summary>
+            <remarks>
+            Initializes the contained <see cref="T:ObjectEditor.IMemberModel"/> to its <see cref="T:System.ComponentModel.DefaultValueAttribute"/> if defined.
+            </remarks>
+            <param name="member">The member the new instance will represent.</param>
+            <returns>The new <see cref="!:MemberViewModel"/>.</returns>
+        </member>
+        <member name="T:ObjectEditor.IMemberViewModel">
+            <summary>
+            Base class for a view model presenting a <see cref="!:MemberModel"/>.
+            </summary>
+        </member>
+        <member name="T:ObjectEditor.MemberViewModel`1">
+            <summary>
+            Base class for a view model presenting a <see cref="T:ObjectEditor.MemberModel`1"/>.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:ObjectEditor.MemberViewModel`1.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ObjectEditor.MemberViewModel`1"/> class.
+            </summary>
+            <typeparam name="T">The type of the member the new instance will represent.</typeparam>
+            <param name="name">The name of the member the new instance will represent.</param>
+        </member>
+    </members>
+</doc>
